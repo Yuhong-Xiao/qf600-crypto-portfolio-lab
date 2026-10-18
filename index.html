@@ -17,6 +17,10 @@ body{font-size:16px}h2{font-size:20px}.heading p{font-size:16px}.panel-title spa
 @media(max-width:600px){header{gap:12px}.logo{letter-spacing:1px}header button{margin-left:auto;font-size:12px;padding:8px}.metrics article{padding:14px 12px}.metrics small{font-size:10px;letter-spacing:.3px}.metrics strong{font-size:29px}.metrics em{font-size:15px}.metrics span{font-size:12px}.simulation-notice{align-items:flex-start;flex-direction:column;gap:6px;padding:14px}.barrow{grid-template-columns:83px minmax(0,1fr) 57px;font-size:11px;gap:7px}.heatmap{overflow-x:auto;grid-template-columns:30px repeat(7,minmax(28px,1fr))}.heatcell{min-height:44px;padding:10px 0;font-size:10px}.panel-title span{display:block;margin-bottom:14px}.mini-metrics{gap:16px}.pipeline button{padding:16px 12px}pre{padding:14px}footer span{display:block;margin-top:8px}}
 
 #lab label:has(#lambda){border-color:#72b7ff;background:#182333}#lab #etaControl{border-color:#b29aff;background:#211e35}
+
+/* Keep signed-performance bars inside their 25px tracks in every browser. */
+.barrow .track{position:relative;height:25px;min-height:25px;overflow:hidden}
+.barrow .track .bar{position:absolute;top:0;height:25px;min-height:25px;max-height:25px}
 </style>
 <body><header><a class="logo" href="#overview">AP<span> / </span>ASSET PRICING</a><span class="status">● RESEARCH SNAPSHOT · SEP 2026</span><button id="motion">Pause ticker</button></header>
 <div class="ticker"><div id="tape"></div></div><div class="workspace"><aside><div class="eyebrow">RESEARCH TERMINAL</div><nav aria-label="Research sections"></nav><div class="aside-note">SMU · Group 6<br>Crypto portfolio research<br><br><span>Notebook-backed results.<br>Interactive research / Group 6.</span></div></aside><main><div class="heading"><div><div class="eyebrow">PORTFOLIO INTELLIGENCE / 01</div><h1 id="title">The cost of conviction.</h1><p id="subtitle">When better-behaved weights don't produce better returns.</p></div><span class="badge">2018 — 2026</span></div>
